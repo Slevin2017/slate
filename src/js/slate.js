@@ -223,16 +223,16 @@ var renderPlainTile = function(tile) {
     beforeDiv.className = "pre-domain";
     beforeDiv.style.textShadow = "-1px 0 "+bgColor+",0 1px "+bgColor+",1px 0 "+bgColor+",0 -1px "+bgColor;
 
-    var afterDiv = document.createElement("div");
-    afterDiv.innerHTML = urlParts.after;
-    afterDiv.style.top = textInfo.size-0.05*textInfo.size;
-    afterDiv.className = "post-domain";
-    afterDiv.style.textShadow = "-1px 0 "+bgColor+",0 1px "+bgColor+",1px 0 "+bgColor+",0 -1px "+bgColor;
+    // var afterDiv = document.createElement("div");
+    // afterDiv.innerHTML = urlParts.after;
+    // afterDiv.style.top = textInfo.size-0.05*textInfo.size;
+    // afterDiv.className = "post-domain";
+    // afterDiv.style.textShadow = "-1px 0 "+bgColor+",0 1px "+bgColor+",1px 0 "+bgColor+",0 -1px "+bgColor;
 
 
     domainDiv.appendChild(beforeDiv);
     domainDiv.appendChild(document.createTextNode(urlParts.domain));
-    domainDiv.appendChild(afterDiv);
+    // domainDiv.appendChild(afterDiv);
 
     var top = (boxHeight + margin)/2 - domainDiv.clientHeight/2;
     var left = (boxWidth + margin)/2 + margin - domainDiv.clientWidth/2;
